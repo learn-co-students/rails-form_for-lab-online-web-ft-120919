@@ -2,7 +2,7 @@ require 'rails_helper'
 
 
 describe 'form page' do
-  it 'form renders with the new action' do
+  it 'form renders with the new action' do 
     visit new_school_class_path
     expect(page).to have_content("School Class Form")
   end
@@ -55,7 +55,7 @@ describe 'form page' do
     expect(SchoolClass.last.title).to eq("Machine Learning")
   end
 end
-
+  
 describe 'Show page' do
   let(:school_class) { SchoolClass.create(title: "Computer Science", room_number: 5) }
 
